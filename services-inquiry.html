@@ -43,25 +43,39 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" >Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="portfolio-details.html">Product</a></li>
-          <li><a href="service-details.html">Services</a></li>
-
-
-          <li class="dropdown"><a href="#"><span>Customer Care</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="product-inquiry.html">Product Inquiry</a></li>
-              <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="services-inquiry.html" class="active">Inquiry</a></li>
-                
-                </ul>
-              </li>
-            
+          <li class="dropdown">
+            <a href="#">Services <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="reloc.html?service=RelocationSurvey">Relocation Survey</a></li>
+              <li><a href="verifi.html?service=VerificationSurvey">Verification Survey</a></li>
+              <li><a href="topo.html?service=TopographicSurvey">Topographic Survey</a></li>
+              <li><a href="subdi.html?service=SubdivisionSurvey">Subdivision Survey</a></li>
+              <li><a href="cs.html?service=ConsolidationSurvey">Consolidation Survey</a></li>
+              <li><a href="css.html?service=ConsolidationSubdivisionSurvey">Consolidation - Subdivision Survey</a></li>
+              <li><a href="abs.html?service=AsBuiltSurvey">As-Built Survey</a></li>
+              <li><a href="hbs.html?service=HydrographicBathymetricSurvey">Hydrographic & Bathymetric Survey</a></li>
+              <li><a href="caap.html?service=CAAPHeightClearanceApplication">CAAP Height Clearance Application</a></li>
+              <li><a href="am.html?service=AerialMapping">Aerial Mapping</a></li>
+              <li><a href="lotplan.html?service=LotPlanWithVicinityMap">Lot Plan With Vicinity Map</a></li>
+              <li><a href="sp.html?service=SketchPlan">Sketch Plan</a></li>
+              <li><a href="cad.html?service=CADPlotting">CAD Plotting</a></li>
             </ul>
           </li>
-
+          <li class="dropdown">
+            <a href="#"><span>Customer Care</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="product-inquiry.html">Product Inquiry</a></li>
+              <li class="dropdown">
+                <a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="services-inquiry.html" class="active">Inquiry</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -143,11 +157,11 @@
               <textarea name="inquiry_message" rows="6" class="form-control" placeholder="Inquiry Message *" required></textarea>
             </div>
 
-           <!-- Select a services -->
+           <!-- Select a Product -->
 <div class="col-md-12">
-  <label for="services">Select a Services</label>
-  <select id="services" name="product" class="form-control">
-    <option value="Select a services">Select a services</option>
+  <label for="product">Select a Product</label>
+  <select id="product" name="product" class="form-control">
+    <option value="Select a Product">Select a Product</option>
     <option value="Relocation Survey">Relocation Survey</option>
     <option value="Verification Survey">Verification Survey</option>
     <option value="Topographic Survey">Topographic Survey</option>
