@@ -118,8 +118,11 @@
       <!-- Contact Form -->
       <div class="col-lg-6">
 
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+        <form action="https://api.web3forms.com/submit" method="post" class="web3-email-form" data-aos="fade-up" data-aos-delay="200">
           <div class="row gy-4">
+
+            <!-- Hidden Access Key -->
+            <input type="hidden" name="access_key" value="33e86504-c05d-4b7f-b141-d362a2005c39">
 
             <!-- Full Name -->
             <div class="col-md-6">
@@ -159,9 +162,9 @@
 
            <!-- Select a Product -->
 <div class="col-md-12">
-  <label for="product">Select a Product</label>
+  <label for="services">Select a services</label>
   <select id="product" name="product" class="form-control">
-    <option value="Select a Product">Select a Product</option>
+    <option value="Select a services">Select a services</option>
     <option value="Relocation Survey">Relocation Survey</option>
     <option value="Verification Survey">Verification Survey</option>
     <option value="Topographic Survey">Topographic Survey</option>
